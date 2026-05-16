@@ -1,0 +1,178 @@
+<h2>Form factor v5 — all electronics in hub, integrated door</h2>
+<p class="subtitle">Hub door is permanently hinged to the hub column (flex cable, no removable contacts). Donut and donut lid are both passive cheap-plastic parts.</p>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">Section view — closed (left) / door open + lid liftable (right)</div>
+    <div class="mockup-body" style="display:flex;justify-content:center;padding:18px;background:#f5f5f7">
+      <svg viewBox="-280 -230 560 410" width="540" height="395" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-280" y1="160" x2="280" y2="160" stroke="#c7c7cc" stroke-width="2"/>
+
+        <!-- ===== CLOSED ===== -->
+        <g transform="translate(-140,0)">
+          <!-- thin flat foot -->
+          <rect x="-130" y="140" width="260" height="20" rx="3" fill="#1f2937" stroke="#111" stroke-width="2"/>
+          <line x1="-128" y1="160" x2="128" y2="160" stroke="#facc15" stroke-width="3"/>
+          <text x="0" y="178" font-family="system-ui,sans-serif" font-size="9" fill="#a16207" text-anchor="middle">non-slip foot</text>
+          <!-- foot groove ridges -->
+          <rect x="-120" y="135" width="80" height="6" fill="#374151"/>
+          <rect x="40" y="135" width="80" height="6" fill="#374151"/>
+
+          <!-- donut in groove -->
+          <rect x="-115" y="85" width="65" height="50" fill="#eef2f7" stroke="#222" stroke-width="2"/>
+          <rect x="50" y="85" width="65" height="50" fill="#eef2f7" stroke="#222" stroke-width="2"/>
+          <!-- rubberized rim -->
+          <line x1="-115" y1="87" x2="-115" y2="133" stroke="#1f2937" stroke-width="4"/>
+          <line x1="115"  y1="87" x2="115"  y2="133" stroke="#1f2937" stroke-width="4"/>
+          <!-- pills -->
+          <g fill="#facc15"><circle cx="-92" cy="115" r="4"/><circle cx="-80" cy="118" r="4"/></g>
+          <g fill="#ef4444"><ellipse cx="80" cy="115" rx="6" ry="3.5"/></g>
+          <g fill="#3b82f6"><circle cx="92" cy="120" r="4"/></g>
+
+          <!-- donut lid (passive plate) -->
+          <rect x="-115" y="76" width="65" height="9" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+          <rect x="50" y="76" width="65" height="9" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+          <text x="-145" y="84" font-family="system-ui,sans-serif" font-size="9" fill="#475569" text-anchor="end">donut lid →</text>
+
+          <!-- hub column -->
+          <rect x="-50" y="-50" width="100" height="195" rx="6" fill="#1f2937" stroke="#111" stroke-width="2"/>
+          <!-- display + LED ring on top -->
+          <rect x="-58" y="-72" width="116" height="22" rx="6" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+          <ellipse cx="0" cy="-72" rx="58" ry="14" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+          <ellipse cx="0" cy="-50" rx="58" ry="14" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+          <text x="0" y="-65" font-family="system-ui,sans-serif" font-size="9" fill="#cfe1ff" text-anchor="middle">round display</text>
+          <text x="0" y="-55" font-family="system-ui,sans-serif" font-size="8" fill="#7aa7e6" text-anchor="middle">+ 3 buttons</text>
+          <!-- status LED ring shown as dots around top of column -->
+          <g fill="#3b82f6"><circle cx="-50" cy="-58" r="2.5"/></g>
+          <g fill="#9ca3af"><circle cx="-30" cy="-50" r="2.5"/></g>
+          <g fill="#1d4ed8"><circle cx="0"   cy="-46" r="3"/></g>
+          <g fill="#9ca3af"><circle cx="30"  cy="-50" r="2.5"/><circle cx="50" cy="-58" r="2.5"/></g>
+          <text x="60" y="-46" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280">7-LED status ring</text>
+
+          <!-- door at 6 o'clock — closed, clamping lid -->
+          <g transform="translate(50,76) rotate(0)">
+            <rect x="0" y="-2" width="60" height="12" rx="2" fill="#facc15" stroke="#ca8a04" stroke-width="1.5"/>
+            <!-- hinge dot at column side -->
+            <circle cx="0" cy="4" r="3" fill="#1f2937"/>
+            <!-- camera + LEDs inside door (drawn as glyphs below the door surface) -->
+            <rect x="20" y="-1" width="6" height="6" fill="#0a0a0a"/>
+            <circle cx="34" cy="2" r="2" fill="#fef3c7"/>
+            <circle cx="12" cy="2" r="2" fill="#fef3c7"/>
+          </g>
+          <text x="80" y="60" font-family="system-ui,sans-serif" font-size="9" fill="#a16207" text-anchor="middle" font-weight="700">door (closed)</text>
+          <text x="80" y="48" font-family="system-ui,sans-serif" font-size="8" fill="#a16207" text-anchor="middle">cam + LEDs · flex to MCU</text>
+
+          <!-- MCU + battery -->
+          <text x="0" y="20" font-family="system-ui,sans-serif" font-size="9" fill="#cfe1ff" text-anchor="middle">ESP32-S3 · RTC · LED coproc</text>
+          <text x="0" y="40" font-family="system-ui,sans-serif" font-size="9" fill="#cfe1ff" text-anchor="middle">speaker · NFC · USB-C</text>
+          <text x="0" y="120" font-family="system-ui,sans-serif" font-size="9" fill="#facc15" text-anchor="middle">swap battery</text>
+
+          <text x="0" y="-110" font-family="system-ui,sans-serif" font-size="11" fill="#374151" text-anchor="middle" font-weight="700">CLOSED · door clamps lid · pills sealed</text>
+        </g>
+
+        <!-- ===== OPEN ===== -->
+        <g transform="translate(140,0)">
+          <rect x="-130" y="140" width="260" height="20" rx="3" fill="#1f2937" stroke="#111" stroke-width="2"/>
+          <line x1="-128" y1="160" x2="128" y2="160" stroke="#facc15" stroke-width="3"/>
+          <rect x="-120" y="135" width="80" height="6" fill="#374151"/>
+          <rect x="40" y="135" width="80" height="6" fill="#374151"/>
+
+          <!-- donut in groove -->
+          <rect x="-115" y="85" width="65" height="50" fill="#eef2f7" stroke="#222" stroke-width="2"/>
+          <rect x="50" y="85" width="65" height="50" fill="#eef2f7" stroke="#222" stroke-width="2"/>
+          <line x1="-115" y1="87" x2="-115" y2="133" stroke="#1f2937" stroke-width="4"/>
+          <line x1="115"  y1="87" x2="115"  y2="133" stroke="#1f2937" stroke-width="4"/>
+          <g fill="#facc15"><circle cx="80" cy="115" r="4"/><circle cx="92" cy="118" r="4"/></g>
+
+          <!-- donut lid LIFTED OFF (shown floating up) -->
+          <rect x="-115" y="46" width="65" height="9" fill="#cbd5e1" stroke="#475569" stroke-width="1" opacity="0.7"/>
+          <rect x="50" y="46" width="65" height="9" fill="#cbd5e1" stroke="#475569" stroke-width="1" opacity="0.7"/>
+          <text x="0" y="38" font-family="system-ui,sans-serif" font-size="9" fill="#16a34a" text-anchor="middle" font-weight="600">donut lid free to lift off ↑</text>
+
+          <!-- hub column same -->
+          <rect x="-50" y="-50" width="100" height="195" rx="6" fill="#1f2937" stroke="#111" stroke-width="2"/>
+          <rect x="-58" y="-72" width="116" height="22" rx="6" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+          <ellipse cx="0" cy="-72" rx="58" ry="14" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+          <ellipse cx="0" cy="-50" rx="58" ry="14" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+          <text x="0" y="-58" font-family="system-ui,sans-serif" font-size="9" fill="#cfe1ff" text-anchor="middle">"refill mode"</text>
+
+          <!-- door OPEN (swung up) -->
+          <g transform="translate(50,76) rotate(-95)">
+            <rect x="0" y="-2" width="60" height="12" rx="2" fill="#facc15" stroke="#ca8a04" stroke-width="1.5"/>
+            <circle cx="0" cy="4" r="3" fill="#1f2937"/>
+            <rect x="20" y="-1" width="6" height="6" fill="#0a0a0a"/>
+            <circle cx="34" cy="2" r="2" fill="#fef3c7"/>
+            <circle cx="12" cy="2" r="2" fill="#fef3c7"/>
+          </g>
+          <!-- door open camera looks down into bay  -->
+          <g stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,2" fill="none">
+            <line x1="50" y1="20" x2="78" y2="100"/>
+            <line x1="50" y1="20" x2="112" y2="100"/>
+          </g>
+          <text x="90" y="78" font-family="system-ui,sans-serif" font-size="9" fill="#3b82f6">cam view ↓</text>
+
+          <text x="0" y="-110" font-family="system-ui,sans-serif" font-size="11" fill="#16a34a" text-anchor="middle" font-weight="700">OPEN · lid releases · bay accessible</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">Top view — door swings outward, lid + donut concentric</div>
+    <div class="mockup-body" style="display:flex;justify-content:center;padding:18px;background:#f5f5f7">
+      <svg viewBox="-260 -260 520 540" width="380" height="395" xmlns="http://www.w3.org/2000/svg">
+        <!-- donut outer -->
+        <circle cx="0" cy="0" r="250" fill="#ffffff" stroke="#222" stroke-width="3"/>
+        <!-- donut lid drawn as light gray translucent overlay -->
+        <circle cx="0" cy="0" r="248" fill="#cbd5e1" opacity="0.35"/>
+        <!-- 7 bay outlines -->
+        <g stroke="#475569" stroke-width="1.5" fill="none" opacity="0.6">
+          <line x1="0" y1="-110" x2="0" y2="-245"/>
+          <line x1="85.9" y1="-68.71" x2="191.27" y2="-153.04"/>
+          <line x1="108.16" y1="24.5" x2="240.84" y2="54.57"/>
+          <line x1="48.98" y1="98.5" x2="109.09" y2="219.36"/>
+          <line x1="-48.98" y1="98.5" x2="-109.09" y2="219.36"/>
+          <line x1="-108.16" y1="24.5" x2="-240.84" y2="54.57"/>
+          <line x1="-85.9" y1="-68.71" x2="-191.27" y2="-153.04"/>
+        </g>
+        <!-- bay labels -->
+        <g font-family="system-ui,sans-serif" font-size="17" font-weight="600" fill="#475569" text-anchor="middle" dominant-baseline="central">
+          <text x="42.20" y="-164.74">Sat</text>
+          <text x="151.80" y="-76.41">Sun</text>
+          <text x="167.69" y="28.81">Mon</text>
+          <text x="65.74" y="156.78" fill="#1d4ed8" font-weight="800">Tue</text>
+          <text x="-65.74" y="156.78">Wed</text>
+          <text x="-167.69" y="28.81">Thu</text>
+          <text x="-151.80" y="-76.41">Fri</text>
+        </g>
+        <!-- active cutout in donut lid at 6 o'clock -->
+        <path d="M -48.98,98.5 A 110,110 0 0,1 48.98,98.5 L 109.09,219.36 A 245,245 0 0,1 -109.09,219.36 Z"
+              fill="#fef3c7" stroke="#1d4ed8" stroke-width="3" stroke-dasharray="6,3"/>
+        <text x="0" y="170" font-family="system-ui,sans-serif" font-size="11" fill="#1d4ed8" text-anchor="middle" font-weight="700">cutout in lid</text>
+        <!-- hub column -->
+        <circle cx="0" cy="0" r="98" fill="#1f2937" stroke="#111" stroke-width="2"/>
+        <!-- status LED ring -->
+        <g>
+          <circle cx="42.20" cy="-78.74" r="3.5" fill="#3b82f6"/>
+          <circle cx="76.80" cy="-36.41" r="3.5" fill="#9ca3af"/>
+          <circle cx="82.69" cy="14.81" r="3.5" fill="#9ca3af"/>
+          <circle cx="32.74" cy="78.78" r="4.5" fill="#1d4ed8"/>
+          <circle cx="-32.74" cy="78.78" r="3.5" fill="#9ca3af"/>
+          <circle cx="-82.69" cy="14.81" r="3.5" fill="#9ca3af"/>
+          <circle cx="-76.80" cy="-36.41" r="3.5" fill="#9ca3af"/>
+        </g>
+        <!-- display -->
+        <circle cx="0" cy="-8" r="62" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+        <g font-family="system-ui,sans-serif" fill="#cfe1ff" text-anchor="middle">
+          <text x="0" y="-28" font-size="10" fill="#7aa7e6">TUE · 8:00 AM</text>
+          <text x="0" y="-6" font-size="13" font-weight="700">Lisinopril</text>
+          <text x="0" y="10" font-size="13" font-weight="700">Aspirin</text>
+          <text x="0" y="30" font-size="10" fill="#facc15">due — open door</text>
+        </g>
+        <!-- door drawn closed, indicated -->
+        <path d="M -48.98,98.5 A 110,110 0 0,1 48.98,98.5 L 35,140 L -35,140 Z" fill="#facc15" stroke="#ca8a04" stroke-width="2"/>
+        <text x="0" y="125" font-family="system-ui,sans-serif" font-size="10" fill="#a16207" text-anchor="middle" font-weight="700">door (hinged at column)</text>
+      </svg>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,145 @@
+<h2>v6 — the donut sandwich</h2>
+<p class="subtitle">Hub assembly = column + bottom foot + top 6/7-arc lid. Donut is captured in the channel between top and bottom, rotates freely. Top lid snaps off only at refill / donut swap. The hub door fills the remaining 1/7 wedge.</p>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">Section view — donut captured between top lid and foot</div>
+    <div class="mockup-body" style="display:flex;justify-content:center;padding:18px;background:#f5f5f7">
+      <svg viewBox="-260 -200 520 370" width="500" height="355" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-260" y1="150" x2="260" y2="150" stroke="#c7c7cc" stroke-width="2"/>
+
+        <!-- foot — thin flat plate -->
+        <rect x="-200" y="130" width="400" height="18" rx="3" fill="#1f2937" stroke="#111" stroke-width="2"/>
+        <line x1="-198" y1="148" x2="198" y2="148" stroke="#facc15" stroke-width="3"/>
+        <text x="0" y="166" font-family="system-ui,sans-serif" font-size="9" fill="#a16207" text-anchor="middle">non-slip foot (thin)</text>
+
+        <!-- foot upper edge has a groove ring -->
+        <rect x="-198" y="124" width="120" height="7" fill="#374151"/>
+        <rect x="78" y="124" width="120" height="7" fill="#374151"/>
+
+        <!-- donut sits in groove -->
+        <rect x="-195" y="74" width="115" height="50" fill="#eef2f7" stroke="#222" stroke-width="2"/>
+        <rect x="80" y="74" width="115" height="50" fill="#eef2f7" stroke="#222" stroke-width="2"/>
+        <line x1="-195" y1="76" x2="-195" y2="122" stroke="#1f2937" stroke-width="4"/>
+        <line x1="195"  y1="76" x2="195"  y2="122" stroke="#1f2937" stroke-width="4"/>
+        <!-- pills -->
+        <g fill="#facc15"><circle cx="-160" cy="105" r="4"/><circle cx="-148" cy="110" r="4"/></g>
+        <g fill="#ef4444"><ellipse cx="150" cy="105" rx="6" ry="3.5"/></g>
+        <g fill="#3b82f6"><circle cx="160" cy="115" r="4"/></g>
+
+        <!-- top 6/7 arc lid attached to hub — drawn as horizontal arms extending from column -->
+        <rect x="-195" y="60" width="145" height="14" rx="3" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <rect x="50" y="60" width="145" height="14" rx="3" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <!-- groove for donut on underside of top lid -->
+        <rect x="-195" y="70" width="145" height="4" fill="#94a3b8"/>
+        <rect x="50" y="70" width="145" height="4" fill="#94a3b8"/>
+        <!-- release tabs on lid edges -->
+        <rect x="-200" y="62" width="6" height="12" fill="#facc15" stroke="#ca8a04" stroke-width="1"/>
+        <rect x="194" y="62" width="6" height="12" fill="#facc15" stroke="#ca8a04" stroke-width="1"/>
+        <text x="-240" y="71" font-family="system-ui,sans-serif" font-size="9" fill="#a16207">snap tab</text>
+        <text x="240" y="71" font-family="system-ui,sans-serif" font-size="9" fill="#a16207" text-anchor="end">snap tab</text>
+
+        <!-- hub column -->
+        <rect x="-50" y="-80" width="100" height="210" rx="6" fill="#1f2937" stroke="#111" stroke-width="2"/>
+        <!-- display -->
+        <rect x="-58" y="-100" width="116" height="20" rx="6" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+        <ellipse cx="0" cy="-100" rx="58" ry="12" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+        <ellipse cx="0" cy="-80" rx="58" ry="12" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+        <text x="0" y="-92" font-family="system-ui,sans-serif" font-size="9" fill="#cfe1ff" text-anchor="middle">round display</text>
+        <text x="0" y="-83" font-family="system-ui,sans-serif" font-size="8" fill="#7aa7e6" text-anchor="middle">+ 3 buttons + status LEDs</text>
+
+        <!-- door hinged at column, closed over 1/7 gap in top lid -->
+        <g>
+          <!-- door body — fills 1/7 gap between two top lid pieces (gap between x=-50 and x=50 in lid plane) -->
+          <rect x="-50" y="60" width="100" height="14" rx="2" fill="#facc15" stroke="#ca8a04" stroke-width="2"/>
+          <!-- hinge at left edge -->
+          <circle cx="-50" cy="67" r="3.5" fill="#1f2937"/>
+          <!-- inside-door electronics (camera + LEDs) -->
+          <rect x="-5" y="63" width="8" height="8" fill="#0a0a0a"/>
+          <circle cx="15" cy="67" r="2.5" fill="#fef3c7"/>
+          <circle cx="-20" cy="67" r="2.5" fill="#fef3c7"/>
+          <text x="0" y="50" font-family="system-ui,sans-serif" font-size="10" fill="#a16207" text-anchor="middle" font-weight="700">door fills 1/7 gap</text>
+        </g>
+
+        <!-- annotations -->
+        <text x="-130" y="-30" font-family="system-ui,sans-serif" font-size="11" fill="#475569" font-weight="700" text-anchor="middle">top lid · 6/7 arc</text>
+        <text x="-130" y="-15" font-family="system-ui,sans-serif" font-size="9" fill="#475569" text-anchor="middle">snap-fit to column</text>
+        <text x="130" y="-30" font-family="system-ui,sans-serif" font-size="11" fill="#475569" font-weight="700" text-anchor="middle">channel captures donut</text>
+        <text x="130" y="-15" font-family="system-ui,sans-serif" font-size="9" fill="#475569" text-anchor="middle">groove top + groove bottom</text>
+
+        <text x="0" y="40" font-family="system-ui,sans-serif" font-size="9" fill="#cfe1ff" text-anchor="middle">MCU · RTC · battery · USB-C</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">Top view — 6/7 lid + door = full coverage</div>
+    <div class="mockup-body" style="display:flex;justify-content:center;padding:18px;background:#f5f5f7">
+      <svg viewBox="-260 -260 520 540" width="375" height="390" xmlns="http://www.w3.org/2000/svg">
+        <!-- outer donut edge -->
+        <circle cx="0" cy="0" r="250" fill="#ffffff" stroke="#222" stroke-width="3"/>
+        <!-- bay dividers (donut, visible only at active gap area since top lid covers most) -->
+        <g stroke="#475569" stroke-width="1" opacity="0.25">
+          <line x1="0" y1="-110" x2="0" y2="-245"/>
+          <line x1="85.9" y1="-68.71" x2="191.27" y2="-153.04"/>
+          <line x1="108.16" y1="24.5" x2="240.84" y2="54.57"/>
+          <line x1="48.98" y1="98.5" x2="109.09" y2="219.36"/>
+          <line x1="-48.98" y1="98.5" x2="-109.09" y2="219.36"/>
+          <line x1="-108.16" y1="24.5" x2="-240.84" y2="54.57"/>
+          <line x1="-85.9" y1="-68.71" x2="-191.27" y2="-153.04"/>
+        </g>
+
+        <!-- top lid 6/7 arc — opaque, from ~+25.7° (right edge of door wedge) clockwise around to ~-25.7° -->
+        <!-- door wedge spans 51.4° centered at 6 o'clock (270° = bottom) -->
+        <!-- lid covers everything except that wedge -->
+        <path d="M -48.98,245 A 245,245 0 1,1 48.98,245 L 21.45,107.27 A 110,110 0 1,0 -21.45,107.27 Z"
+              fill="#cbd5e1" opacity="0.85" stroke="#475569" stroke-width="1.5"/>
+
+        <!-- door wedge filled (at 6 o'clock) -->
+        <path d="M -48.98,245 A 245,245 0 0,1 48.98,245 L 21.45,107.27 A 110,110 0 0,0 -21.45,107.27 Z"
+              fill="#facc15" stroke="#ca8a04" stroke-width="2.5"/>
+        <text x="0" y="180" font-family="system-ui,sans-serif" font-size="11" fill="#a16207" text-anchor="middle" font-weight="700">DOOR</text>
+        <text x="0" y="200" font-family="system-ui,sans-serif" font-size="9" fill="#a16207" text-anchor="middle">cam ↓ inside</text>
+
+        <!-- bay labels on top lid -->
+        <g font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#475569" text-anchor="middle" dominant-baseline="central">
+          <text x="42.20" y="-164.74">Sat</text>
+          <text x="151.80" y="-76.41">Sun</text>
+          <text x="167.69" y="28.81">Mon</text>
+          <text x="-65.74" y="156.78">Wed</text>
+          <text x="-167.69" y="28.81">Thu</text>
+          <text x="-151.80" y="-76.41">Fri</text>
+        </g>
+        <!-- Tue label inside door -->
+        <text x="0" y="155" font-family="system-ui,sans-serif" font-size="16" font-weight="800" fill="#1d4ed8" text-anchor="middle">Tue</text>
+
+        <!-- snap tabs visible at lid edges -->
+        <circle cx="0" cy="-250" r="5" fill="#facc15" stroke="#a16207" stroke-width="1.5"/>
+        <text x="0" y="-275" font-family="system-ui,sans-serif" font-size="9" fill="#a16207" text-anchor="middle">snap tab</text>
+
+        <!-- hub column on top -->
+        <circle cx="0" cy="0" r="105" fill="#1f2937" stroke="#111" stroke-width="2"/>
+        <!-- status LED ring (7 dots) -->
+        <g>
+          <circle cx="42.20" cy="-90.74" r="3.5" fill="#3b82f6"/>
+          <circle cx="86.80" cy="-46.41" r="3.5" fill="#9ca3af"/>
+          <circle cx="92.69" cy="14.81" r="3.5" fill="#9ca3af"/>
+          <circle cx="32.74" cy="88.78" r="4.5" fill="#1d4ed8"/>
+          <circle cx="-32.74" cy="88.78" r="3.5" fill="#9ca3af"/>
+          <circle cx="-92.69" cy="14.81" r="3.5" fill="#9ca3af"/>
+          <circle cx="-86.80" cy="-46.41" r="3.5" fill="#9ca3af"/>
+        </g>
+        <!-- round display -->
+        <circle cx="0" cy="-8" r="72" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+        <g font-family="system-ui,sans-serif" fill="#cfe1ff" text-anchor="middle">
+          <text x="0" y="-32" font-size="11" fill="#7aa7e6">TUE · 8:00 AM</text>
+          <text x="0" y="-10" font-size="14" font-weight="700">Lisinopril</text>
+          <text x="0" y="8" font-size="14" font-weight="700">Aspirin</text>
+          <text x="0" y="30" font-size="10" fill="#facc15">due — open door</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle">Sandwich is the operating state — donut can't fall out, doesn't rattle. Snap tabs release top lid only for refill / donut swap.</p>

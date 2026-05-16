@@ -1,0 +1,105 @@
+<h2>Form factor v4 — smart cap + passive donut</h2>
+<p class="subtitle">Hub (base + central column) carries display + buttons + MCU. Donut is a passive open-top ring (no flaps). Smart cap sits over the donut, with a single hinged door at the 6 o'clock active position; cap underside holds camera, illumination + status LEDs. Cap-to-hub via 6 pogo contacts at the rim.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Exploded section view — hub / donut / cap</div>
+  <div class="mockup-body" style="display:flex;justify-content:center;padding:18px;background:#f5f5f7">
+    <svg viewBox="-280 -300 560 540" width="540" height="520" xmlns="http://www.w3.org/2000/svg">
+      <!-- ==== CAP (top) ==== -->
+      <g transform="translate(0,-220)">
+        <!-- cap outer profile -->
+        <path d="M -160,40 L -160,10 Q -160,-15 -135,-15 L 135,-15 Q 160,-15 160,10 L 160,40 Z"
+              fill="#ffffff" stroke="#222" stroke-width="2"/>
+        <!-- center hole for hub column -->
+        <rect x="-48" y="-15" width="96" height="25" fill="#f5f5f7" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3,2"/>
+        <!-- cap underside annotations -->
+        <!-- status LED ring (7 dots underneath) -->
+        <g fill="#3b82f6"><circle cx="-130" cy="35" r="3"/><circle cx="-95" cy="35" r="3"/></g>
+        <g fill="#9ca3af"><circle cx="-60" cy="35" r="3"/></g>
+        <g fill="#1d4ed8"><circle cx="0"   cy="35" r="4"/></g>
+        <g fill="#9ca3af"><circle cx="60"  cy="35" r="3"/></g>
+        <g fill="#9ca3af"><circle cx="95"  cy="35" r="3"/><circle cx="130" cy="35" r="3"/></g>
+        <text x="-130" y="55" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280">RGB status LEDs (×7)</text>
+        <!-- door at 6 o'clock — drawn in profile -->
+        <rect x="-30" y="40" width="60" height="14" fill="#facc15" stroke="#ca8a04" stroke-width="1.5"/>
+        <text x="0" y="73" font-family="system-ui,sans-serif" font-size="10" fill="#a16207" text-anchor="middle" font-weight="700">hinged door</text>
+        <!-- camera + white LEDs near door -->
+        <rect x="-10" y="22" width="8" height="12" fill="#0a0a0a"/>
+        <text x="-32" y="32" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280">cam</text>
+        <circle cx="10" cy="28" r="3" fill="#fef3c7"/>
+        <circle cx="-22" cy="28" r="3" fill="#fef3c7"/>
+        <text x="40" y="32" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280">white LEDs</text>
+        <text x="0" y="-1" font-family="system-ui,sans-serif" font-size="11" fill="#374151" text-anchor="middle" font-weight="700">CAP (smart lid)</text>
+      </g>
+
+      <!-- arrows down -->
+      <g stroke="#9ca3af" stroke-width="1.5" fill="none">
+        <line x1="-180" y1="-150" x2="-180" y2="-95"/>
+        <polygon points="-180,-95 -185,-105 -175,-105" fill="#9ca3af" stroke="none"/>
+        <line x1="180" y1="-150" x2="180" y2="-95"/>
+        <polygon points="180,-95 175,-105 185,-105" fill="#9ca3af" stroke="none"/>
+      </g>
+
+      <!-- ==== DONUT (middle) ==== -->
+      <g transform="translate(0,-65)">
+        <!-- left arm of donut -->
+        <rect x="-160" y="0" width="65" height="45" fill="#eef2f7" stroke="#222" stroke-width="2"/>
+        <!-- right arm of donut -->
+        <rect x="95" y="0" width="65" height="45" fill="#eef2f7" stroke="#222" stroke-width="2"/>
+        <!-- pills in bays -->
+        <g fill="#facc15">
+          <circle cx="-128" cy="22" r="4"/><circle cx="-118" cy="28" r="4"/>
+          <circle cx="120" cy="22" r="4"/><circle cx="130" cy="28" r="4"/>
+        </g>
+        <g fill="#ef4444"><ellipse cx="125" cy="38" rx="6" ry="3.5"/></g>
+        <g fill="#3b82f6"><circle cx="-120" cy="38" r="4"/></g>
+        <!-- rubberized rim accents -->
+        <line x1="-160" y1="2" x2="-160" y2="44" stroke="#1f2937" stroke-width="4"/>
+        <line x1="160"  y1="2" x2="160"  y2="44" stroke="#1f2937" stroke-width="4"/>
+        <text x="0" y="-10" font-family="system-ui,sans-serif" font-size="11" fill="#374151" text-anchor="middle" font-weight="700">DONUT (passive, open-top)</text>
+        <text x="0" y="60" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280" text-anchor="middle">rubberized outer rim for grip · NFC/RFID tag (optional)</text>
+      </g>
+
+      <!-- ==== HUB (bottom) ==== -->
+      <g>
+        <!-- foot/base -->
+        <rect x="-180" y="100" width="360" height="65" rx="8" fill="#1f2937" stroke="#111" stroke-width="2"/>
+        <!-- groove for donut to ride in (top of foot) -->
+        <rect x="-165" y="92" width="155" height="10" fill="#374151" stroke="#111" stroke-width="1"/>
+        <rect x="10" y="92" width="155" height="10" fill="#374151" stroke="#111" stroke-width="1"/>
+        <text x="-90" y="86" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280" text-anchor="middle">↑ groove for donut</text>
+        <!-- rubberized non-slip underside -->
+        <line x1="-175" y1="165" x2="175" y2="165" stroke="#facc15" stroke-width="3"/>
+        <text x="0" y="180" font-family="system-ui,sans-serif" font-size="9" fill="#a16207" text-anchor="middle">non-slip rubberized underside</text>
+        <!-- central column -->
+        <rect x="-45" y="-40" width="90" height="140" rx="6" fill="#1f2937" stroke="#111" stroke-width="2"/>
+        <!-- display on top of column -->
+        <ellipse cx="0" cy="-40" rx="50" ry="12" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+        <rect x="-50" y="-58" width="100" height="20" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+        <ellipse cx="0" cy="-58" rx="50" ry="12" fill="#0b1220" stroke="#3b82f6" stroke-width="2"/>
+        <text x="0" y="-52" font-family="system-ui,sans-serif" font-size="9" fill="#cfe1ff" text-anchor="middle">round display</text>
+        <text x="0" y="-42" font-family="system-ui,sans-serif" font-size="8" fill="#7aa7e6" text-anchor="middle">+ 3 buttons</text>
+        <!-- pogo contacts at top of foot rim (where cap mates) -->
+        <g fill="#facc15">
+          <circle cx="-150" cy="92" r="3"/>
+          <circle cx="-130" cy="92" r="3"/>
+          <circle cx="130" cy="92" r="3"/>
+          <circle cx="150" cy="92" r="3"/>
+        </g>
+        <text x="-140" y="115" font-family="system-ui,sans-serif" font-size="9" fill="#a16207" text-anchor="middle">pogo (cap I²C + 5V)</text>
+        <!-- NFC reader pad in foot top under donut -->
+        <rect x="-30" y="92" width="60" height="6" fill="#a78bfa" stroke="#7c3aed" stroke-width="1"/>
+        <text x="55" y="100" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280">NFC reader pad</text>
+        <!-- MCU + RTC + speaker indication -->
+        <text x="0" y="135" font-family="system-ui,sans-serif" font-size="9" fill="#cfe1ff" text-anchor="middle">ESP32-S3 · DS3231 · LED coprocessor · speaker · USB-C</text>
+        <text x="0" y="148" font-family="system-ui,sans-serif" font-size="9" fill="#facc15" text-anchor="middle">swappable battery</text>
+        <text x="0" y="200" font-family="system-ui,sans-serif" font-size="11" fill="#374151" text-anchor="middle" font-weight="700">HUB (base + central column)</text>
+      </g>
+
+      <!-- table line -->
+      <line x1="-280" y1="225" x2="280" y2="225" stroke="#c7c7cc" stroke-width="2"/>
+    </svg>
+  </div>
+</div>
+
+<p class="subtitle">Refill flow: lift cap off → lift donut off → fill all 7 open bays on counter → drop donut back into hub groove → cap back on (magnetic alignment seats pogo contacts).</p>
